@@ -1,0 +1,74 @@
+@import '../main.module.scss';
+$color-black: #111111;
+$color-black-2: #292B29;
+$color-white: #FDFDFD;
+$color-gray: #F0F2F4;
+$color-primary: #FAB700;
+
+
+.container{
+    background-color: $color-gray;
+    .content{
+        display: grid;
+        grid-template-rows: 50px 1fr 50px;
+        gap: 5rem;
+        align-items: center;
+        justify-items: center;
+        img{
+            grid-row: 3/4;
+        }
+        ul{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            grid-row: 1/2;
+            a{
+                text-decoration: none;
+                color: $color-black-2;
+                font-weight: 700;
+                font-size: 1.3rem;
+                svg{
+                    font-size: 1.5rem;
+                }
+                &:hover{
+                    text-decoration: underline;
+                    color: $color-primary;
+                }
+            }
+            &:first-of-type{
+                grid-row: 2/3;
+                gap: 1rem;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media (min-width: 930px) {
+    .container{
+        .content{
+            grid-template-rows: 1fr;
+            grid-template-columns: .5fr 1fr .5fr;
+            gap: 0;
+            img{
+                grid-row: 1/2;
+                justify-self: self-start;
+            }
+            ul{
+                justify-self: self-end;
+                grid-row: 1/2;
+                &:first-of-type{
+                    justify-self: center;
+                    grid-row: 1/2;
+                    flex-direction: row;
+                    gap: 1.5rem;
+                    li{
+                        a{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

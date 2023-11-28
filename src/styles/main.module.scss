@@ -1,0 +1,15 @@
+
+
+.container{
+    padding: 8rem 2rem;
+    .content{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    @media (min-width: 700px) {
+        padding: 10rem 3rem;
+        padding-left: 7rem;
+    }
+}

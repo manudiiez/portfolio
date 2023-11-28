@@ -1,0 +1,54 @@
+@import '../main.module.scss';
+$color-black: #111111;
+$color-black-2: #292B29;
+$color-white: #FDFDFD;
+$color-gray: #F0F2F4;
+$color-primary: #FAB700;
+
+
+.container {
+    background-color: $color-gray;
+
+    .content {
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: $color-primary;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: $color-black-2;
+            font-weight: 300;
+            margin-bottom: 2rem;
+
+            span {
+                display: none;
+            }
+        }
+
+        // div {
+        //     width: 100%;
+        //     height: 500px;
+        //     background-color: rgb(221, 221, 221);
+        // }
+    }
+
+    @media (min-width: 700px) {
+        .content {
+            h2 {
+                font-size: 4rem;
+                margin-bottom: 2rem;
+            }
+
+            h3 {
+                margin-bottom: 8rem;
+
+                span {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
