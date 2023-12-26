@@ -214,11 +214,69 @@ $color-primary: #FAB700;
                         background-color: $color-primary;
                         font-weight: 700;
                     }
+
                 }
             }
         }
     }
 }
+
+.copyLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: $color-white;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: $color-black-2;
+    font-weight: 300;
+    transition: background-color .3s ease-out;
+    cursor: pointer;
+
+    span {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: start;
+    }
+
+    svg {
+        font-size: 1.3rem;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+
+        >svg {
+            opacity: 1;
+        }
+    }
+
+    >svg {
+        display: none;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+    }
+
+
+    @media (min-width: 900px) {
+        span {
+            gap: 2rem;
+
+            svg {
+                font-size: 1.5rem;
+            }
+        }
+
+        >svg {
+            display: inline-block;
+        }
+    }
+
+}
+
 
 @media (min-width: 900px) {
     .body {

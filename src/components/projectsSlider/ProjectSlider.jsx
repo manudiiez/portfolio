@@ -5,7 +5,6 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { faFigma, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEye } from "@fortawesome/free-regular-svg-icons";
 import Image from "next/image";
 
 const ProjectSlider = ({ listProjects, selected, onNext, onPrev }) => {

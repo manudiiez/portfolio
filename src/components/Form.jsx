@@ -30,12 +30,20 @@ const Form = () => {
             });
             return false
         }
-        Swal.fire({
+        const Toast = Swal.mixin({
+            toast: true,
             position: "top-end",
-            icon: "success",
-            title: 'Correo enviado correctamente',
             showConfirmButton: false,
-            timer: 1500
+            timer: 2000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }
+        });
+        Toast.fire({
+            icon: "success",
+            title: "Correo enviado correctamente"
         });
         setLoading(false)
     }

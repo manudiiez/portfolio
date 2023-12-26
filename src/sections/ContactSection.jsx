@@ -2,9 +2,10 @@ import Reveal from '@/components/textAnimation/Reveal'
 import styles from '@/styles/components/contact.module.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope, faFile } from "@fortawesome/free-regular-svg-icons"
+import { faFile } from "@fortawesome/free-regular-svg-icons"
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 import Form from '@/components/Form'
+import CopyLink from '@/components/CopyLink'
 
 const ContactSection = () => {
     return (
@@ -20,10 +21,7 @@ const ContactSection = () => {
                             <div className={styles.card}>
                                 <h6>Información</h6>
                                 <div className={styles.media}>
-                                    <a href='https://mail.google.com/mail/' target='blanck'>
-                                        <FontAwesomeIcon icon={faEnvelope} />
-                                        <p>manudiiez123@gmail.com</p>
-                                    </a>
+                                    <CopyLink />
                                     <a href='https://github.com/manudiiez' target='blanck'>
                                         <FontAwesomeIcon icon={faGithub} />
                                         <p>manudiiez</p>
