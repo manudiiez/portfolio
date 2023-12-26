@@ -49,7 +49,7 @@ const Sidebar = () => {
                         transition={{ duration: 0.5 }}
 
                     >
-                        <Link href="#home" onClick={() => setState(false)}>Inicio</Link>
+                        <Link href="/#home" onClick={() => setState(false)}>Inicio</Link>
                     </motion.li>
                     <motion.li
                         variants={{
@@ -61,7 +61,7 @@ const Sidebar = () => {
                         transition={{ duration: 0.5, delay: 0.1 }}
 
                     >
-                        <Link href="#projects" onClick={() => setState(false)}>Proyectos</Link>
+                        <Link href="/#projects" onClick={() => setState(false)}>Proyectos</Link>
                     </motion.li>
                     <motion.li
                         variants={{
@@ -73,7 +73,7 @@ const Sidebar = () => {
                         transition={{ duration: 0.5, delay: 0.2 }}
 
                     >
-                        <Link href="#about" onClick={() => setState(false)}>Sobre mí</Link>
+                        <Link href="/#about" onClick={() => setState(false)}>Sobre mí</Link>
                     </motion.li>
                     <motion.li
                         variants={{
@@ -85,7 +85,7 @@ const Sidebar = () => {
                         transition={{ duration: 0.5, delay: 0.3 }}
 
                     >
-                        <Link href="#skills" onClick={() => setState(false)}>Habilidades</Link>
+                        <Link href="/#skills" onClick={() => setState(false)}>Habilidades</Link>
                     </motion.li>
                     <motion.li
                         variants={{
@@ -97,7 +97,7 @@ const Sidebar = () => {
                         transition={{ duration: 0.5, delay: 0.4 }}
 
                     >
-                        <Link href="#contact" onClick={() => setState(false)}>Contacto</Link>
+                        <Link href="/#contact" onClick={() => setState(false)}>Contacto</Link>
                     </motion.li>
                 </ul>
             </div>

@@ -36,20 +36,20 @@ const ContactSection = () => {
                             <div className={styles.card}>
                                 <h6>Información</h6>
                                 <div className={styles.media}>
-                                    <a href='#' target='_blanck'>
-                                        <FontAwesomeIcon icon={faEnvelope}/>
+                                    <a href='#' target='blanck'>
+                                        <FontAwesomeIcon icon={faEnvelope} />
                                         <p>manudiiez123@gmail.com</p>
                                     </a>
-                                    <a href='#' target='_blanck'>
-                                        <FontAwesomeIcon icon={faGithub}/>
+                                    <a href='https://github.com/manudiiez' target='blanck'>
+                                        <FontAwesomeIcon icon={faGithub} />
                                         <p>manudiiez</p>
                                     </a>
-                                    <a href='#' target='_blanck'>
-                                        <FontAwesomeIcon icon={faLinkedinIn}/>
+                                    <a href='https://www.linkedin.com/in/manuel-diez-de-o%C3%B1ate-31a322234/' target='blanck'>
+                                        <FontAwesomeIcon icon={faLinkedinIn} />
                                         <p>Manuel Diez de Oñate</p>
                                     </a>
-                                    <a href='#' target='_blanck'>
-                                        <FontAwesomeIcon icon={faFile}/>
+                                    <a href='http://localhost:3000/cv.pdf' download="CVManuelDiezDeOñate">
+                                        <FontAwesomeIcon icon={faFile} />
                                         <p>CV</p>
                                     </a>
                                 </div>

@@ -18,7 +18,8 @@
     margin: 0;
 }
 
-#slider .head button {
+#slider .head a {
+    text-decoration: none;
     background-color: #111111;
     font-size: 1.3rem;
     color: #FDFDFD;
@@ -33,11 +34,11 @@
     cursor: pointer;
 }
 
-#slider .head button:hover{
+#slider .head a:hover {
     color: #FAB700;
 }
 
-#slider .head button svg{
+#slider .head a svg {
     font-size: 1.7rem;
 }
 
@@ -113,7 +114,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(17, 17, 17, 0.70);
+    background-color: rgba(17, 17, 17, 0.90);
     padding: 3rem 1rem;
     box-sizing: border-box;
     transition: bottom .5s ease-in-out;
@@ -153,7 +154,8 @@
     display: flex;
     gap: 2rem;
 }
-#slider .content .img .text .links div a{
+
+#slider .content .img .text .links div a {
     font-size: 1rem;
     color: #FAB700;
     font-weight: 500;
@@ -163,7 +165,7 @@
     text-decoration: none;
 }
 
-#slider .content .img .text .links div a:hover{
+#slider .content .img .text .links div a:hover {
     text-decoration: underline;
 }
 
@@ -224,14 +226,15 @@
     text-decoration: none;
 }
 
-#slider .controls .more svg{
+#slider .controls .more svg {
     font-size: 1.7rem;
 }
 
 #slider .controls .more:hover span {
     color: #FAB700;
 }
-#slider .controls .more:hover svg{
+
+#slider .controls .more:hover svg {
     color: #FAB700;
 }
 
@@ -248,7 +251,7 @@
         font-weight: 700;
     }
 
-    #slider .head button {
+    #slider .head a {
         font-size: 1.5rem;
         color: #FDFDFD;
         font-weight: 700;

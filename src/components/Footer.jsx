@@ -19,35 +19,36 @@ const Footer = () => {
                 />
                 <ul>
                     <li>
-                        <Link href="/">Inicio</Link>
+
+                        <Link href="/#home">Inicio</Link>
                     </li>
                     <li>
-                        <Link href="/">Proyectos</Link>
+                        <Link href="/#projects">Proyectos</Link>
                     </li>
                     <li>
-                        <Link href="/">Sobre mí</Link>
+                        <Link href="/#about">Sobre mí</Link>
                     </li>
                     <li>
-                        <Link href="/">Habilidades</Link>
+                        <Link href="/#skills">Habilidades</Link>
                     </li>
                     <li>
-                        <Link href="/">Contacto</Link>
+                        <Link href="/#contact">Contacto</Link>
                     </li>
                 </ul>
                 <ul>
                     <li>
                         <a href="#" target="_blank" >
-                            <FontAwesomeIcon icon={faGithub}/>
+                            <FontAwesomeIcon icon={faGithub} />
                         </a>
                     </li>
                     <li>
                         <a href="#" target="_blank" >
-                            <FontAwesomeIcon icon={faEnvelope}/>
+                            <FontAwesomeIcon icon={faEnvelope} />
                         </a>
                     </li>
                     <li>
                         <a href="#" target="_blank" >
-                            <FontAwesomeIcon icon={faLinkedinIn}/>
+                            <FontAwesomeIcon icon={faLinkedinIn} />
                         </a>
                     </li>
                 </ul>

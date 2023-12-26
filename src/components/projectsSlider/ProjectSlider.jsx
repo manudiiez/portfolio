@@ -4,7 +4,7 @@ import './projectSlider.css'
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faFigma, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEye } from "@fortawesome/free-regular-svg-icons";
 import Image from "next/image";
 
@@ -18,10 +18,14 @@ const ProjectSlider = ({ listProjects, selected, onNext, onPrev }) => {
                         <h3>{listProjects[selected].title}</h3>
                     </CSSTransition>
                 </SwitchTransition>
-                <button>
-                    <span>MAS</span>
+                {/* <button>
+                    <span>VER</span>
                     <FontAwesomeIcon icon={faAngleRight} />
-                </button>
+                </button> */}
+                <Link href={listProjects[selected].live} target="blanck"  >
+                    <span>VER</span>
+                    <FontAwesomeIcon icon={faAngleRight} />
+                </Link>
             </div>
             <div className='content'>
                 <SwitchTransition>
@@ -36,8 +40,11 @@ const ProjectSlider = ({ listProjects, selected, onNext, onPrev }) => {
                                 <div className="links">
                                     <p>Links del proyecto<span>.</span></p>
                                     <div>
-                                        <Link href={listProjects[selected].github} target="_blank" ><span>Codigo</span> <FontAwesomeIcon icon={faGithub} /></Link>
-                                        <Link href={listProjects[selected].live} target="_blank"><span>Proyecto</span> <FontAwesomeIcon icon={faEye} /></Link>
+                                        {
+                                            listProjects[selected].links.map((item, index) => (
+                                                <Link key={index} href={item.link} target="_blank" ><span>{item.name}</span> <FontAwesomeIcon icon={item.icon === 'github' ? faGithub : faFigma} /></Link>
+                                            ))
+                                        }
                                     </div>
                                 </div>
                             </div>
@@ -53,8 +60,8 @@ const ProjectSlider = ({ listProjects, selected, onNext, onPrev }) => {
                             <FontAwesomeIcon icon={faAngleRight} />
                         </button>
                     </div>
-                    <Link href={`/${listProjects[selected].id}`} className={'more'} >
-                        <span>MAS</span>
+                    <Link href={listProjects[selected].live} target="blanck" className='more' >
+                        <span>VER</span>
                         <FontAwesomeIcon icon={faAngleRight} />
                     </Link>
                 </div>
