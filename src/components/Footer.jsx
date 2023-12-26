@@ -37,17 +37,17 @@ const Footer = () => {
                 </ul>
                 <ul>
                     <li>
-                        <a href="#" target="_blank" >
+                        <a href="https://github.com/manudiiez" target="blank" >
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="_blank" >
+                        <a href="https://mail.google.com/mail/" target="blank" >
                             <FontAwesomeIcon icon={faEnvelope} />
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="_blank" >
+                        <a href="https://www.linkedin.com/in/manuel-diez-de-o%C3%B1ate-31a322234/" target="blank" >
                             <FontAwesomeIcon icon={faLinkedinIn} />
                         </a>
                     </li>

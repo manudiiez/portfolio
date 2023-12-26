@@ -118,15 +118,16 @@ $color-primary: #FAB700;
             font-size: 1.2rem;
             font-weight: 700;
             border: none;
-            padding: 1rem 0;
             letter-spacing: 5px;
             cursor: pointer;
+            height: 48px;
             transition: background-color .3s ease-out;
 
             &:hover {
                 background-color: $color-primary;
             }
         }
+
     }
 }
 
@@ -140,6 +141,7 @@ $color-primary: #FAB700;
             max-width: 500px;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
             .card {
                 position: relative;
                 background-color: $color-gray;
@@ -169,7 +171,7 @@ $color-primary: #FAB700;
                 background-color: $color-primary;
                 left: -25px;
                 top: -25px;
-                z-index: 3; 
+                z-index: 3;
             }
 
             h6 {
@@ -199,7 +201,8 @@ $color-primary: #FAB700;
                     font-weight: 300;
                     text-decoration: none;
                     transition: background-color .3s ease-out;
-                    svg{
+
+                    svg {
                         font-size: 1.3rem;
                     }
 
@@ -245,7 +248,8 @@ $color-primary: #FAB700;
                     .media {
                         a {
                             gap: 2rem;
-                            svg{
+
+                            svg {
                                 font-size: 1.5rem;
                             }
                         }

@@ -9,7 +9,7 @@ import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 const Navbar = () => {
 
     const dowloadFileAtURL = () => {
-        const pdf_file = 'http://localhost:3000/cv.pdf'
+        const pdf_file = process.env.NEXT_PUBLIC_URI + '/cv.pdf'
         const aTag = document.createElement('a')
         aTag.href = pdf_file
         aTag.setAttribute('download', 'CVManuelDiezDeOñate')
