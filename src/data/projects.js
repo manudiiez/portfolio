@@ -1,24 +1,29 @@
 export const projects = [
     {
         id: 0,
-        title: 'Ruca Textil',
-        description: "Desarrollar una aplicación web para una empresa de venta de indumentaria personalizada al por mayor. Trabajo en un equipo donde implementamos metodologías ágiles, asegurando una experiencia de usuario fluida y un proceso de compra eficiente.",
-        img_phone: "/ruca-textil-phone.jpg",
-        img_desk: "/ruca-textil-desk.jpg",
-        tech: "React - Framer motion - Sass",
+        title: 'SuperPixels Games',
+        description: "Desarrollo de ecommerce completo con Next.js y Strapi, priorizando un diseño atractivo y funciones esenciales. El proyecto ofrece inicio de sesión para usuarios y la capacidad de guardar juegos.",
+        img_phone: "/superpixel-phone.jpg",
+        img_desk: "/superpixel-desk.jpg",
+        tech: "Next.js - Sass - Framer Motion - Strapi",
         links: [
             {
                 name: "Codigo",
                 icon: 'github',
-                link: "https://github.com/manudiiez/ruca-textil"
+                link: "https://github.com/manudiiez/superpixel-games"
+            },
+            {
+                name: "Codigo Strapi",
+                icon: 'github',
+                link: "https://github.com/manudiiez/superpixel-games-server"
             },
             {
                 name: "Figma",
                 icon: 'figma',
-                link: "https://www.figma.com/file/vl8dW1EkJUI6w1pokz0Fr9/Ruca-Textil?type=design&node-id=1-7&mode=design&t=6wmfeaNunTaQ2jl2-0"
+                link: "https://www.figma.com/file/Ei2rlmbry5tGwgfHbbYEqy/Untitled?type=design&node-id=0%3A1&mode=design&t=urMeW0JL4YJCug6G-1"
             },
         ],
-        live: 'https://manudiiez.github.io/ruca-textil/',
+        live: 'https://github.com/manudiiez/superpixel-games',
     },
     {
         id: 1,
@@ -64,28 +69,23 @@ export const projects = [
     },
     {
         id: 3,
-        title: 'SuperPixels Games',
-        description: "Desarrollo de ecommerce completo con Next.js y Strapi, priorizando un diseño atractivo y funciones esenciales. El proyecto ofrece inicio de sesión para usuarios y la capacidad de guardar juegos.",
-        img_phone: "/superpixel-phone.jpg",
-        img_desk: "/superpixel-desk.jpg",
-        tech: "Next.js - Sass - Framer Motion - Strapi",
+        title: 'Ruca Textil',
+        description: "Desarrollar una aplicación web para una empresa de venta de indumentaria personalizada al por mayor. Trabajo en un equipo donde implementamos metodologías ágiles, asegurando una experiencia de usuario fluida.",
+        img_phone: "/ruca-textil-phone.jpg",
+        img_desk: "/ruca-textil-desk.jpg",
+        tech: "React - Framer motion - Sass",
         links: [
             {
                 name: "Codigo",
                 icon: 'github',
-                link: "https://github.com/manudiiez/superpixel-games"
-            },
-            {
-                name: "Codigo servidor",
-                icon: 'github',
-                link: "https://github.com/manudiiez/superpixel-games-server"
+                link: "https://github.com/manudiiez/ruca-textil"
             },
             {
                 name: "Figma",
                 icon: 'figma',
-                link: "https://www.figma.com/file/Ei2rlmbry5tGwgfHbbYEqy/Untitled?type=design&node-id=0%3A1&mode=design&t=urMeW0JL4YJCug6G-1"
+                link: "https://www.figma.com/file/vl8dW1EkJUI6w1pokz0Fr9/Ruca-Textil?type=design&node-id=1-7&mode=design&t=6wmfeaNunTaQ2jl2-0"
             },
         ],
-        live: 'https://github.com/manudiiez/superpixel-games',
-    }
+        live: 'https://manudiiez.github.io/ruca-textil/',
+    },
 ]
