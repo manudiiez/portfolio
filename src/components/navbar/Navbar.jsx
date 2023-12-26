@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
+import CopyLink from '../CopyLink'
 
 const Navbar = () => {
 
@@ -30,9 +31,9 @@ const Navbar = () => {
                     animate="visible"
                     transition={{ duration: 0.5 }}
                 >
-                    <a href='#' target='blanck'>
-                        <FontAwesomeIcon icon={faEnvelope} />
-                    </a>
+                    <CopyLink>
+                        <FontAwesomeIcon icon={faEnvelope} className={styles.svg} />
+                    </CopyLink>
                 </motion.li>
                 <motion.li
                     variants={{

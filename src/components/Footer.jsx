@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope, faFile } from "@fortawesome/free-regular-svg-icons"
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
+import CopyLink from './CopyLink'
 
 
 const Footer = () => {
@@ -42,9 +43,9 @@ const Footer = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://mail.google.com/mail/" target="blank" >
+                        <CopyLink className={styles.svg}>
                             <FontAwesomeIcon icon={faEnvelope} />
-                        </a>
+                        </CopyLink>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/manuel-diez-de-o%C3%B1ate-31a322234/" target="blank" >

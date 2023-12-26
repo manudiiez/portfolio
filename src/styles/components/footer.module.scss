@@ -6,36 +6,52 @@ $color-gray: #F0F2F4;
 $color-primary: #FAB700;
 
 
-.container{
+.container {
     background-color: $color-gray;
-    .content{
+
+    .content {
         display: grid;
         grid-template-rows: 50px 1fr 50px;
         gap: 5rem;
         align-items: center;
         justify-items: center;
-        img{
+
+        img {
             grid-row: 3/4;
         }
-        ul{
+
+        ul {
             display: flex;
             gap: 2rem;
             align-items: center;
             grid-row: 1/2;
-            a{
+
+            a {
                 text-decoration: none;
                 color: $color-black-2;
                 font-weight: 700;
                 font-size: 1.3rem;
-                svg{
+
+                svg {
                     font-size: 1.5rem;
                 }
-                &:hover{
+
+                &:hover {
                     text-decoration: underline;
                     color: $color-primary;
                 }
             }
-            &:first-of-type{
+
+            svg {
+                font-size: 1.5rem;
+                color: $color-black-2;
+
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+
+            &:first-of-type {
                 grid-row: 2/3;
                 gap: 1rem;
                 flex-direction: column;
@@ -45,25 +61,29 @@ $color-primary: #FAB700;
 }
 
 @media (min-width: 930px) {
-    .container{
-        .content{
+    .container {
+        .content {
             grid-template-rows: 1fr;
             grid-template-columns: .5fr 1fr .5fr;
             gap: 0;
-            img{
+
+            img {
                 grid-row: 1/2;
                 justify-self: self-start;
             }
-            ul{
+
+            ul {
                 justify-self: self-end;
                 grid-row: 1/2;
-                &:first-of-type{
+
+                &:first-of-type {
                     justify-self: center;
                     grid-row: 1/2;
                     flex-direction: row;
                     gap: 1.5rem;
-                    li{
-                        a{
+
+                    li {
+                        a {
                             font-size: 1rem;
                         }
                     }

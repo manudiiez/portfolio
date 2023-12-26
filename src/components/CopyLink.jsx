@@ -1,11 +1,8 @@
 
 "use client"
-import styles from '@/styles/components/contact.module.scss'
-import { faCopy, faEnvelope } from '@fortawesome/free-regular-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Swal from 'sweetalert2'
 
-const CopyLink = () => {
+const CopyLink = ({ children }) => {
 
     const copyToClipBoard = () => {
         navigator.clipboard.writeText('manudiiez123@gmail.com')
@@ -27,12 +24,8 @@ const CopyLink = () => {
     }
 
     return (
-        <div className={styles.copyLink} onClick={copyToClipBoard}>
-            <span>
-                <FontAwesomeIcon icon={faEnvelope} />
-                <p>manudiiez123@gmail.com</p>
-            </span>
-            <FontAwesomeIcon icon={faCopy} />
+        <div onClick={copyToClipBoard}>
+            {children}
         </div>
     )
 }
