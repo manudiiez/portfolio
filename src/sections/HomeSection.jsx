@@ -1,6 +1,6 @@
 import Reveal from '@/components/textAnimation/Reveal'
 import styles from '@/styles/components/home.module.scss'
-import Image from 'next/image'
+import Link from 'next/link'
 
 const HomeSection = () => {
     return (
@@ -15,7 +15,7 @@ const HomeSection = () => {
                         </Reveal>
                     </div>
                     <h1>Diseñando soluciones digitales con pasión, precisión y el deseo de marcar la diferencia en el mundo.</h1>
-                    <button>CONTÁCTAME</button>
+                    <Link href='/#contact'>CONTÁCTAME</Link>
                 </div>
                 <div className={styles.image}></div>
             </div>

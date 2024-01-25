@@ -41,18 +41,21 @@ $color-primary: #FAB700;
                 color: $color-black-2;
             }
 
-            button {
+
+            a {
                 width: 100%;
                 max-width: 300px;
+                display: inline-block;
                 margin-top: 4rem;
-                padding: 1rem 0;
+                padding: .9rem 0;
                 border-radius: 20px;
                 background-color: $color-primary;
-                border: none;
                 cursor: pointer;
-                font-size: 1.3rem;
+                font-size: 1.2rem;
                 color: $color-white;
                 font-weight: 700;
+                text-decoration: none;
+                text-align: center;
 
                 &:hover {
                     background-color: #ebac01;
@@ -72,7 +75,6 @@ $color-primary: #FAB700;
                 display: block;
                 width: 100%;
                 max-width: 300px;
-                // background-color: $color-primary;
                 background-image: url('../../../public/mascara-recorte-1.png');
                 background-size: contain;
                 position: relative;
@@ -93,7 +95,7 @@ $color-primary: #FAB700;
                     height: 0;
                     box-sizing: border-box;
                     z-index: -1;
-                    
+
                     background-color: $color-black;
                     // transform: translate(-50%, -50%);
                     width: 1000px;
@@ -171,34 +173,40 @@ $color-primary: #FAB700;
                         width: 1000px;
                         height: 1000px;
                     }
-                    50%{
+
+                    50% {
                         background-color: $color-white;
                         width: 1000px;
                         height: 1000px;
                     }
-                    55%{
+
+                    55% {
                         background-color: $color-black;
                         width: 1000px;
                         height: 1000px;
                     }
+
                     56% {
                         background-color: $color-white;
                         // transform: translate(-50%, -50%);
                         width: 1000px;
                         height: 1000px;
                     }
+
                     57% {
                         background-color: $color-black;
                         // transform: translate(-50%, -50%);
                         width: 1000px;
                         height: 1000px;
                     }
+
                     58% {
                         background-color: $color-white;
                         // transform: translate(-50%, -50%);
                         width: 1000px;
                         height: 1000px;
                     }
+
                     59% {
                         background-color: $color-black;
                         // transform: translate(-50%, -50%);
