@@ -17,10 +17,6 @@ const ProjectSlider = ({ listProjects, selected, onNext, onPrev }) => {
                         <h3>{listProjects[selected].title}</h3>
                     </CSSTransition>
                 </SwitchTransition>
-                {/* <button>
-                    <span>VER</span>
-                    <FontAwesomeIcon icon={faAngleRight} />
-                </button> */}
                 <Link href={listProjects[selected].live} target="blanck"  >
                     <span>VER</span>
                     <FontAwesomeIcon icon={faAngleRight} />
@@ -52,10 +48,10 @@ const ProjectSlider = ({ listProjects, selected, onNext, onPrev }) => {
                 </SwitchTransition>
                 <div className="controls">
                     <div>
-                        <button onClick={onPrev}>
+                        <button onClick={onPrev} className="controls_button">
                             <FontAwesomeIcon icon={faAngleLeft} />
                         </button>
-                        <button onClick={onNext}>
+                        <button onClick={onNext} className="controls_button">
                             <FontAwesomeIcon icon={faAngleRight} />
                         </button>
                     </div>

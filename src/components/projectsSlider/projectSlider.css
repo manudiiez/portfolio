@@ -212,10 +212,12 @@
 
 #slider .content .controls div button:hover {
     background-color: #ebac01;
+    color: #ffffff !important;
 }
 
 #slider .controls div button svg {
     font-size: 1.7rem;
+    color: #111111;
 }
 
 #slider .controls .more {
@@ -312,14 +314,11 @@
     }
 
     #slider .content .controls div button {
-        color: #111111;
-        fill: #111111;
         padding: 1rem 0;
     }
 
     #slider .content .controls div button svg {
-        color: #111111;
-        fill: #111111;
+        color: red;
     }
 
     #slider .content .controls .more {
