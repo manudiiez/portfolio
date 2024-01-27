@@ -6,11 +6,12 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 import CopyLink from '../CopyLink'
+import { NEXT_PUBLIC_URI } from '@/utils/config.js'
 
 const Navbar = () => {
 
     const dowloadFileAtURL = () => {
-        const pdf_file = process.env.NEXT_PUBLIC_URI + '/cv.pdf'
+        const pdf_file = NEXT_PUBLIC_URI + '/cv.pdf'
         const aTag = document.createElement('a')
         aTag.href = pdf_file
         aTag.setAttribute('download', 'CVManuelDiezDeOñate')

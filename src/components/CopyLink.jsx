@@ -1,5 +1,6 @@
 
 "use client"
+import { NEXT_PUBLIC_URI } from '@/utils/config.js'
 import Swal from 'sweetalert2'
 
 const CopyLink = ({ children }) => {
@@ -21,6 +22,7 @@ const CopyLink = ({ children }) => {
             icon: "success",
             title: "Texto copiado"
         });
+        console.log(NEXT_PUBLIC_URI);
     }
 
     return (

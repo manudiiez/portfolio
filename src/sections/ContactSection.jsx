@@ -6,6 +6,7 @@ import { faCopy, faEnvelope, faFile } from "@fortawesome/free-regular-svg-icons"
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 import Form from '@/components/Form'
 import CopyLink from '@/components/CopyLink'
+import { NEXT_PUBLIC_URI } from '@/utils/config.js'
 
 const ContactSection = () => {
     return (
@@ -39,7 +40,7 @@ const ContactSection = () => {
                                         <FontAwesomeIcon icon={faLinkedinIn} />
                                         <p>Manuel Diez de Oñate</p>
                                     </a>
-                                    <a href={`${process.env.NEXT_PUBLIC_URI}/cv.pdf`} download="CVManuelDiezDeOñate">
+                                    <a href={`${NEXT_PUBLIC_URI}/cv.pdf`} download="CVManuelDiezDeOñate">
                                         <FontAwesomeIcon icon={faFile} />
                                         <p>CV</p>
                                     </a>
