@@ -3,13 +3,6 @@ import styles from '@/styles/components/contact.module.scss'
 import { useState } from 'react';
 import Swal from 'sweetalert2'
 
-export const viewport = {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false
-}
-
 const Form = () => {
 
     const [loading, setLoading] = useState(false);
