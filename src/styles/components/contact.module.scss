@@ -241,6 +241,11 @@ $color-primary: #FAB700;
         gap: 1rem;
         align-items: center;
         justify-content: start;
+
+        p {
+            text-decoration: none !important;
+            border-bottom: none !important;
+        }
     }
 
     svg {
