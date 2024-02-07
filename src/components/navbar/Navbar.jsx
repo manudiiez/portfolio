@@ -15,6 +15,7 @@ const Navbar = () => {
         const aTag = document.createElement('a')
         aTag.href = pdf_file
         aTag.setAttribute('download', 'CVManuelDiezDeOñate')
+        console.log(pdf_file);
         document.body.appendChild(aTag)
         aTag.click()
         aTag.remove()
